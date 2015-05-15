@@ -202,20 +202,57 @@
 								var user1 = prompt("Elige piedra, papel o tijera ?");
 								var user2 = prompt("Elige piedra, papel o tijera ?");
 
-								var paper = "papel";
-								var rock = "rock";
-								var scisor = "tijeras";
+								alert("Usuario 1 "+ user1);
+								alert("Usuario 2 "+ user2);
 
-								if (user1 == user2) 
+								if(user1 == "piedra")
 								{
-								    alert("Empate");
+								    if(user2 == "piedra")
+								    {
+								        alert("Empate!");
+								    }
+								    else if(user2 == "papel")
+								    {
+								        alert("Perdiste :( ");
+								    }
+								    else if(user2 == "tijera")
+								    {
+								        alert("Ganaste!");
+								    }
 								}
-								else if (user1 != user2 );
+
+								else if(user1 == "papel")
 								{
-								    alert("Gano el user2");
+								    if(user2 == "piedra")
+								    {
+								        alert("Ganaste!");
+								    }
+								    else if(user2 == "papel")
+								    {
+								        alert("Empate!");
+								    }
+								    else if(user2 == "tijera")
+								    {
+								        alert("Perdiste!");
+								    }
 								}
+								else if(user1 == "tijera")
+								{
+								    if(user2 == "piedra")
+								    {
+								        alert("Perdiste!");
+								    }
+								    else if(user2 == "papel")
+								    {
+								        alert("Ganaste!");
+								    }
+								    else if(user2 == "tijera")
+								    {
+								        alert("Empate!");
+								    }
+								}
+
 								else
 								{
-								     alert("Perdio user 1");   
+								    alert("Opciones incorrectas");
 								}
-								    
