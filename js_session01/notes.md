@@ -1,0 +1,11 @@
+Para empezar vamos a crear un repositorio para todas las notas de la clase, vamos a rea (lizar un branch por clase, se va a subir a github, 
+	-- Crear carpeta para desarrollo en home (mkdir dev)
+		-- Crear carpeta para notas (mkdir desafiolatam)
+			-- Iniciar git (git init .)
+				-- sincronizar con github (git remote add origin [SSH:del repo] )
+					-- Subir archivos (git push origin [nombre del branch])
+						--crear un branh ( git checkout - b js_session01)
+							-- crear carpeta de la session (mkdir js_session01)
+								-- crear archivos en la carpeta (notas, html, js)
+									--subir archivos a git
+										-- sincronizar con github
