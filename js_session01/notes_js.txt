@@ -162,3 +162,60 @@
 					    alert("pagale chavo");
 					}
 					 
+			 		codigo con SOLID
+						var age = 18;
+						var gender = "female";
+						var isMom = true;
+						var legalAgeFemale = (age >= 18 && gender == "female")
+						if (isMom)
+						{
+						    alert("Entra gratis por ser dia de la madre");
+						}
+						else if ( legalAgeFemale)
+						{
+						    alert("Entras gratis");
+						}
+						else
+						{
+						    alert("pagale chavo");
+						}
+						
+							var age = prompt("Cuantos años tienes");
+							var gender = "female";
+							var isMom = false;
+							var legalAgeFemale = (age >= 18 && gender == "female")
+							if (isMom)
+							{
+							    alert("Entra gratis por ser dia de la madre");
+							}
+							else if ( legalAgeFemale)
+							{
+							    alert("Entras gratis");
+							}
+							else
+							{
+							    alert("pagale chavo");
+							}
+
+							piedra papel o tijeras
+
+								var user1 = prompt("Elige piedra, papel o tijera ?");
+								var user2 = prompt("Elige piedra, papel o tijera ?");
+
+								var paper = "papel";
+								var rock = "rock";
+								var scisor = "tijeras";
+
+								if (user1 == user2) 
+								{
+								    alert("Empate");
+								}
+								else if (user1 != user2 );
+								{
+								    alert("Gano el user2");
+								}
+								else
+								{
+								     alert("Perdio user 1");   
+								}
+								    
