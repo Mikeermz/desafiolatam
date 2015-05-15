@@ -1,0 +1,164 @@
+¿ Que es JavaScript?
+
+
+
+	Naming Conventions 
+		
+		Mejor entendimiento para las personas que leen el codigo, hay dos tipos de nombres de convenciones
+			camel casse	 	vs 		snake case 
+			firsName 		vs 		first_name
+
+	Nombrar variables
+		
+		Nos sirve para nobmrar las variables
+			var soyMuyGrande;
+
+	Nombrar funciones
+		
+		Nos sirve para nobmrar las funciones
+			function getFirstName();
+
+	Noombrar clases/modulos
+		
+		Nos sirve para nobmrar las clases/modulos (se empiezan con mayuscula)
+			User
+			Counter
+
+	Nombres con sentido
+
+		Nombres de las variables que tengan sentido, para poder ser mas agil.
+			edt 	vs 	endDateTime
+			lgt 	vs 	longityde
+			dsct 	vs 	discount
+
+	Alternativas a JS
+
+		flash		microsoft silverlight		java applets
+
+	Formas de incluir JS
+
+		inline y a travezse un archivo externo 
+
+	Empieza el codigo 
+
+		alert 
+			funcion alert([parametro]);
+				alert("Hola");
+					manda  una alerta al navegador
+
+		console.log
+			funcion console.log([parametro]);
+				console.log("hola")
+					manda un mensaje a la consola
+
+		Variables
+
+			La expresion var es para declarar las variables, solo es necesario el nombre 
+
+				var edad = 5
+
+			Tipos de datos 
+
+				Boolean, String, Number, undefined, null
+
+		Operadores Logitcos
+
+			&&	 |	||	|	==	  |	!=		  |	===				   | !===		| !	 | >     | <     |	>=  | <=    |
+			and	 |	or 	|	igual |	diferente |	mismo tipo y valor | uno u otro	| no | mayor | menor |may = | men = |
+
+			Ejemplo
+
+				var speed = 10.50;
+				var age = 10;
+				var firstName = "Mikee";
+
+				console.log(speed > 11 && age < 11);
+				console.log(speed > 9 || age < 12);
+				console.log(speed == age);
+				console.log(speed === age);
+				console.log(speed !== age)
+				console.log(![age > 18]);
+
+				//int, float, string, boolean, undefined, null
+				// <.>,<=, >=
+
+				var a = 12;
+				var b = 13;
+				var c = a + b;
+				var d = "12";
+				console.log(a == d);
+				console.log(a <= c);
+				console.log(b >= c);
+				console.log(b > a);
+				console.log(a < b);
+				console.log(a == d);
+				console.log(a === d);
+
+
+		Operadores aritmeticos
+
+			+	 | -	  | /		 | *			  | %		| ++	   | --		   |	
+			Suma | restar | division | multiplicacion | residuo | suma uno | resta uno |
+			
+			Ejemplo
+				
+				var a = 10;
+				var b = 25.60;
+
+				console.log(a + b);
+				console.log(a - b);
+				console.log(a * b);
+				console.log(a / b);
+				console.log(a % b);
+				console.log(++a);
+				console.log(b--);
+
+				console.log(a + b - b * b / a % a);
+				console.log(a + b - b / b % a * a);
+				console.log(a + b - b % b * a / a);
+
+			Ejercicio
+
+				Defina 4 variables: boolean, number, string y null; y con el comando typeof X muestre el tipo de variable.
+				
+				Ejemplo
+				
+					var number = 23;
+					var string = "cadena";
+					var isValidate = true;
+					var undif;
+					var nul = null;
+
+					console.log(typeof number);
+					console.log(typeof string);
+					console.log(typeof isValidate);
+					console.log(typeof undif);
+					console.log(typeof nul);
+
+		Presedencia de Operadores
+			¿Cuanto es 2 + "3"?
+				Los operadores generan conversiones implicitas (a veces)	
+
+		Condicionales 
+
+				IF		| Else		| Else IF		  |
+				Si 		| NO 		| si ( si no si ) |
+
+				Ejemplo
+					var age = 18;
+					var gender = "female";
+					var isMom = true;
+
+					if (isMom)
+					{
+					    alert("Entra gratis por ser dia de la madre");
+					}
+					else if (age >= 18 && gender == "female")
+					{
+					    alert("Entras gratis");
+					}
+					else
+					{
+					    alert("pagale chavo");
+					}
+					 

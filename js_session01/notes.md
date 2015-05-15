@@ -1,4 +1,4 @@
-Para empezar vamos a crear un repositorio para todas las notas de la clase, vamos a rea (lizar un branch por clase, se va a subir a github, 
+Para empezar vamos a crear un repositorio para todas las notas de la clase, vamos a rea (lizar un branch por clase, se va a subir a github
 	-- Crear carpeta para desarrollo en home (mkdir dev)
 		-- Crear carpeta para notas (mkdir desafiolatam)
 			-- Iniciar git (git init .)
