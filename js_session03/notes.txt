@@ -1,1 +1,134 @@
-hola
+Recorriendo un arreglo con while 
+	
+Otros accesors
+	shift
+		example
+			nameVariable.shift();
+			console.log(nameVariable);
+	Unshift
+		example
+			nameVariable.unshift();
+			console.log(nameVariable);
+	Sort
+		example
+			nameVariable.sort();
+			console.log(nameVariable);
+	Concat
+		example
+			nameVariable.concat();
+			console.log(nameVariable);
+	Join
+		example
+			nameVariable.join();
+			console.log(nameVariable);
+
+.map
+	The map() method creates a new array with the results of calling a provided function on every element in this array.
+		
+		Es un tema de programacion funcional, tiene que ver con los ciclos, solamente que estos se ejecutan una accion en 
+		especifico, y regresa 
+ 	Example
+
+	    var firstNames = ["juan","ramiro"];
+	    var lastNames = ["ramirez","garcia"];
+	    
+	    var fullNames = firstNames.map(function(firstName){return firstName + " Perez" });
+	    
+	    console.log(fullNames);
+
+	    Te regresa 
+
+	    ["juan Perez", "ramiro Perez"]
+.reduce
+	The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) has to reduce it to a single value.
+
+	Sintax 
+		arr.reduce(callback[, initialValue])
+
+			example
+				var number = [0, 1, 2, 3, 4, 5];
+
+				var n = number.reduce(function(previousValue, currentValue, index, array) {
+				  return previousValue + currentValue;
+				});
+
+				console.log(n);
+
+				Te regresa
+				15
+
+.filter
+	The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+	Syntax
+		arr.filter(callback[, thisArg])
+
+			example
+
+				var ages = [10,15,21,90,10,18,90,11,12]
+
+				var grownUps = ages.filter(function(age){
+				return age >= 18;
+				})
+				console.log(grownUps);
+
+	Tambien se pueden anidar 
+
+Hashes / dicionarios
+	obketos literales
+
+		Son arreglos pero sus indices tiene nombre 
+
+			var hash = ["Saludo": "Hola"]
+
+Ejemplo de la clase
+
+	Muestrame la suma de las edades las personas que no tienen mascotas
+
+		var people = [{name : "Angel", age : 15, pets: ["coco","pollo"]},
+		              {name : "Rola" , age : 18, pets: ["goofy"]},
+		              {name : "Luis" , age : 20, pets: []}];
+
+		var noPet = people.filter(function(person){
+		    return person.pets.length === 0;  
+		}).map(function(ages){
+		    return ages.age;
+		}).reduce(function(prev,curr){
+		    return prev + curr;
+		});
+		console.log(noPet);
+
+
+Function
+
+	Function anonima 
+		Codigo que solamente se usara una vez
+	Function con nombre
+		Codigo que se usa mas de una vez
+
+	Ejemplo con Funciones
+
+	var people = [{name : "Angel", age : 15, pets: ["coco","pollo"]},
+              {name : "Rola" , age : 18, pets: ["goofy"]},
+              {name : "Luis" , age : 20, pets: []}];
+
+function getNotPetPeople(people){
+   return people.filter(function(person){
+    return person.pets.length === 0;
+    });
+}
+function getNotPetPeopleSum(people){
+    return getNotPetPeople(people).map(function(person){
+        return person.age;
+    }).reduce(function(prev, curr){
+        return prev + curr;
+    });
+}
+
+console.log(getNotPetPeopleSum(people));
+
+ : 			  {name	: "Angela", age : 15, gender: "femele"},
+              {name : "Rola" , age : 18, gender: "male"},
+              {name : "Luisa" , age : 20, gender: "femele"},
+              {name : "Angel", age : 15, gender: "male"},
+              {name : "Karla", age : 15, gender: "femele"},
