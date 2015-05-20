@@ -207,7 +207,7 @@
 
 								if(user1 == "piedra")
 								{
-								    if(user2 == "piedra")
+								    if(userex2 == "piedra")
 								    {
 								        alert("Empate!");
 								    }
