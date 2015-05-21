@@ -1,0 +1,4 @@
+Prototype 
+
+Javascript hay dos tipos de datos 
+

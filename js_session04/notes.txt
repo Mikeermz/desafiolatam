@@ -1,1 +1,37 @@
-hola
+Function
+	Cuando se tiene la llamada de una function tipo .map, itera dentro de los elementos
+
+Para que sirven los arreglos
+	Sirve para contener cualquier claro 
+
+Funciones
+	Sirven para reutiliar el codigo mas de una vez,
+
+		Definiendo una funcion
+
+			var alCuadrado = function(x){
+				return x*X;
+			} 
+
+		utilizando una funcion
+
+			console.log(alCuadrado(4));
+
+	Hay dos tpos de funciones
+		La que retorna algo o las que modifican algo
+
+	Una funcion es creada por una expresion que empieza con la palabra reservada function.
+
+		var alCuadrado = function(x)
+
+
+
+
+	El cuerpo de la funcion se ejecuta solamente cuando es llamada
+
+
+Parametros y Scopes
+	Las variales duran lo que dura la funciones
+
+Funciones de primera clase
+	Una funcion puede regresar para que nos sirva de parametro o para darnos un resultado
